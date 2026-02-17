@@ -1,0 +1,8 @@
+@use "./reset.scss";
+@use "./variables.scss";
+@use "./fonts.scss";
+
+body {
+    font-family: var(--font-syne-regular);
+    font-weight: 500;
+}
