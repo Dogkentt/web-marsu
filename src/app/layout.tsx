@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import '@/shared/assets/styles/index.scss'
+import AppLayout from "@/shared/layouts/AppLayout";
 
 export const metadata: Metadata = {
   title: "Hello world!",
