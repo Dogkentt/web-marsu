@@ -3,6 +3,28 @@
 @use "./fonts.scss";
 
 body {
-    font-family: var(--font-syne-regular);
+    font-family: var(--font-syne400);
+    background-color: var(--color-black);
+    color: var(--color-white);
     font-weight: 500;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media (max-width: 1240px) {
+        max-width: 100%;
+        padding: 0 50px;
+    }
+
+    @media (max-width: 992px) {
+        padding: 0 30px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
 }

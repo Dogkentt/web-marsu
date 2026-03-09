@@ -1,0 +1,30 @@
+.button {
+    padding: 15px 32px;
+    cursor: pointer;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--font-syne400);
+
+    &--text {
+        font-weight: 400;
+        font-size: 25px;
+        color: var(--color-white);
+        font-family: var(--font-syne400);
+    }
+
+    &--outlined {
+        border: 1px solid var(--color-white);
+
+        font-weight: 400;
+        font-size: 25px;
+        color: var(--color-white);
+        font-family: var(--font-syne400);
+    }
+
+    &--primary {
+        background: var(--color-primary-gradient);
+        color: var(--color-white);
+    }
+}

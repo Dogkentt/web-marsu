@@ -1,8 +1,12 @@
-import Hero from "@/widgets/Hero/Hero";
-import styles from "./page.module.scss";
+import { Hero, Schedule } from "@/widgets";
+import style from "./page.module.scss";
+import cn from "classnames";
 
 export default function Home() {
   return (
-    <Hero />
+    <main className={cn("container", style["main"])}>
+      <Hero />
+      <Schedule />
+    </main>
   );
 }

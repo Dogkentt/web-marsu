@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Home",
+        "link": "home"
+    },
+    {
+        "title": "Schedule",
+        "link": "schedule"
+    },
+    {
+        "title": "Speakers",
+        "link":"speakers"
+    },
+    {
+        "title": "Tickets",
+        "link": "tickets"
+    },
+    {
+        "title": "Venue",
+        "link": "venue"
+    },
+    {
+        "title": "Sponsors",
+        "link": "sponsors"
+    }
+]

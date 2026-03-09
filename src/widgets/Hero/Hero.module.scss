@@ -1,0 +1,69 @@
+.hero {
+    padding: 90px 60px;
+    position: relative;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-date {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 136%;
+            color: var(--color-white);
+            font-family: var(--font-syne700);
+        }
+
+        &-location {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 136%;
+            text-align: right;
+            color: var(--color-white);
+            font-family: var(--font-syne700);
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 100px;
+        color: var(--color-white);
+        font-family: var(--font-syne700);
+        margin-top: 80px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 136%;
+        color: var(--color-white);
+        margin-top: 30px;
+        z-index: 1;
+        position: relative;
+        max-width: 928px;
+    }
+
+    &__button {
+        padding: 22px 50px;
+        margin-top: 110px;
+
+        span {
+            font-size: 25px;
+            font-weight: 500;
+            font-family: var(--font-syne500);
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 67px;
+        bottom: 7px;
+        transform: rotate(75deg);
+        background: url("../../../public/images/hero//spiral.svg") no-repeat center center;
+        width: 436px;
+        height: 442px;
+        z-index: 0;
+    }
+}

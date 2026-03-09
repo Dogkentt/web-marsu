@@ -1,8 +1,12 @@
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
-  --font-syne-regular: 'Syne Regular', sans-serif;
-  --font-syne-medium: 'Syne Medium', sans-serif;
-  --font-syne-semibold: 'Syne SemiBold', sans-serif;
-  --font-syne-bold: 'Syne Bold', sans-serif;
+  --color-dark: #1a1a1a;
+  --color-primary: #0147FF;
+  --color-primary-gradient: linear-gradient(64deg, #0147ff 0%, rgba(1, 71, 255, 0) 100%);
+  --color-gray: #DEDEE0;
+  --font-syne400: 'Syne Regular', sans-serif;
+  --font-syne500: 'Syne Medium', sans-serif;
+  --font-syne600: 'Syne SemiBold', sans-serif;
+  --font-syne700: 'Syne Bold', sans-serif;
 }

@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+
+    &__logotype {
+        font-size: 50px;
+        font-weight: 700;
+        font-family: var(--font-syne-bold);
+        color: var(--color-white);
+        text-decoration: none;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 10px;
+    }
+}
