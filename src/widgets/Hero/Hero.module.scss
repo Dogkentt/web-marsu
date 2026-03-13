@@ -2,10 +2,25 @@
     padding: 90px 60px;
     position: relative;
 
+    @media (max-width: 1240px) {
+        padding: 45px 30px;
+    }
+
+    @media (max-width: 500px) {
+        padding: 20px;
+    }
+
     &__header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+        z-index: 1;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         &-date {
             font-weight: 700;
@@ -13,6 +28,14 @@
             line-height: 136%;
             color: var(--color-white);
             font-family: var(--font-syne700);
+
+            @media (max-width: 1240px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 16px;
+            }
         }
 
         &-location {
@@ -22,6 +45,15 @@
             text-align: right;
             color: var(--color-white);
             font-family: var(--font-syne700);
+
+            @media (max-width: 1240px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 500px) {
+                text-align: center;
+                font-size: 16px;
+            }
         }
     }
 
@@ -31,6 +63,20 @@
         color: var(--color-white);
         font-family: var(--font-syne700);
         margin-top: 80px;
+        z-index: 1;
+        position: relative;
+
+        @media (max-width: 1240px) {
+            font-size: 60px;
+            margin-top: 60px;
+            max-width: 70%;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 36px;
+            max-width: 100%;
+            margin-top: 40px;
+        }
     }
 
     &__description {
@@ -42,16 +88,44 @@
         z-index: 1;
         position: relative;
         max-width: 928px;
+
+        @media (max-width: 1240px) {
+            font-size: 18px;
+            max-width: 90%;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 16px;
+            max-width: 100%;
+            text-align: justify;
+        }
     }
 
     &__button {
         padding: 22px 50px;
         margin-top: 110px;
+        z-index: 1;
+        position: relative;
 
         span {
             font-size: 25px;
             font-weight: 500;
             font-family: var(--font-syne500);
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            justify-content: center;
+            margin-top: 70px;
+        }
+
+        @media (max-width: 500px) {
+            padding: 15px 32px;
+            margin-top: 45px;
+
+            span {
+                font-size: 18px;
+            }
         }
     }
 
@@ -62,8 +136,35 @@
         bottom: 7px;
         transform: rotate(75deg);
         background: url("../../../public/images/hero//spiral.svg") no-repeat center center;
+        background-size: contain;
         width: 436px;
         height: 442px;
         z-index: 0;
+
+        @media (max-width: 1240px) {
+            width: 360px;
+            height: 360px;   
+        }
+
+        @media (max-width: 992px) {
+            width: 300px;
+            height: 300px;
+        }
+
+        @media (max-width: 768px) {
+            width: 270px;
+            height: 270px;
+            top: 140px;
+            right: 10px;
+            bottom: auto;
+        }
+
+        @media (max-width: 500px) {
+            width: 200px;
+            height: 200px;
+            top: 35px;
+            right: 10px;
+            bottom: auto;
+        }
     }
 }

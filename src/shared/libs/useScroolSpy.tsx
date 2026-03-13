@@ -10,7 +10,6 @@ export interface useScrollSpyProps {
 export function useScrollSpy({ ids, options }: useScrollSpyProps) {
     const [activeId, setActiveId] = useState<string>('');
 
-    // Стабилизируем ссылку на массив
     const stableIds = useMemo(() => ids, [JSON.stringify(ids)]);
 
     useEffect(() => {

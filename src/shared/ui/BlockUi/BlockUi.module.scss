@@ -1,6 +1,10 @@
 .block {
     border-radius: 50px;
 
+    @media (max-width: 500px) {
+        border-radius: 30px;
+    }
+
     &--dark {
         background-color: var(--color-dark);
     }
