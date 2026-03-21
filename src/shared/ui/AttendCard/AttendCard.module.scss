@@ -1,0 +1,50 @@
+.attend-card {
+    padding: 40px 60px;
+    position: relative;
+    max-height: 290px;
+    gap: 52px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &--right & {
+        &__description {
+            margin-left: auto;
+        }
+    }
+
+    &--left & {
+        &__number {
+            left: auto;
+            right: 15px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: var(--color-white);
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167%;
+        color: var(--color-white);
+        max-width: 220px;
+    }
+
+    &__number {
+        font-weight: 400;
+        font-size: 300px;
+        background: linear-gradient(183deg, var(--color-primary) 0%, rgba(1, 71, 255, 0) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        left: 15px;
+        bottom: -90px;
+    }
+}

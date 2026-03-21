@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import '@/shared/assets/styles/index.scss'
 import AppLayout from "@/shared/layouts/AppLayout";
+import { Header } from "@/widgets/Header/Header";
 
 export const metadata: Metadata = {
   title: "Hello world!",
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Header />
         {children}
       </body>
     </html>

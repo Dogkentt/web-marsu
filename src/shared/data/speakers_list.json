@@ -1,0 +1,26 @@
+[
+    {
+        "image": "/images/speakers/human-one.jpg",
+        "name": "Dr. Emily Carter",
+        "job": "Chief AI Scientist, OpenAI",
+        "position": "left"
+    },
+    {
+        "image": "/images/speakers/human-two.jpg",
+        "name": "Elon Park",
+        "job": "CTO, DeepMind",
+        "position": "right"
+    },
+    {
+        "image": "/images/speakers/human-three.jpg",
+        "name": "Laura Kim",
+        "job": "AI Policy Advisor, EU Commission",
+        "position": "right"
+    },
+    {
+        "image": "/images/speakers/human-four.jpg",
+        "name": "Dr. Alan Foster",
+        "job": "Stanford AI Lab",
+        "position": "left"
+    }
+]

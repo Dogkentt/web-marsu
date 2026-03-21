@@ -1,0 +1,13 @@
+.companies {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        margin-top: 50px;
+    }
+}

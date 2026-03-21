@@ -1,0 +1,22 @@
+[
+    {
+        "image": "images/companies/company-logo-one.svg",
+        "name": "Company One"
+    },
+    {
+        "image": "images/companies/company-logo-two.svg",
+        "name": "Company Two"
+    },
+    {
+        "image": "images/companies/company-logo-three.svg",
+        "name": "Company Three"
+    },
+    {
+        "image": "images/companies/company-logo-four.svg",
+        "name": "Company Four"
+    },
+    {
+        "image": "images/companies/company-logo-five.svg",
+        "name": "Company Five"
+    }
+]
