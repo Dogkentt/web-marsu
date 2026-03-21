@@ -1,0 +1,9 @@
+.header-section {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+        max-width: 295px;
+    }
+}

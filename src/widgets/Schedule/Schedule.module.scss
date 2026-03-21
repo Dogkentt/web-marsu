@@ -1,3 +1,87 @@
+// .schedule-wrap {
+//     min-height: 1000px;
+// }
+
 .schedule {
-    min-height: 1000px;
+    margin-top: 90px;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url("../../../public/images/schedule/circle.svg");
+        background-repeat: no-repeat;
+        width: 386px;
+        height: 266px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-radius: 50px;
+    }
+
+    &__list {
+        padding: 140px 80px;
+        // display: flex;
+        // flex-direction: column;
+        // gap: 150px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        &:not(:first-of-type) {
+            margin-top: 150px;
+        }
+
+        &-time {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+            color: var(--color-white);
+            min-width: max-content;
+        }
+
+        &-info {
+            max-width: 600px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 40px;
+            color: var(--color-white);
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: var(--color-white);
+            margin-top: 30px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        margin-left: auto;
+        margin-top: 80px;
+        width: max-content;
+
+        button {
+            min-width: 600px;
+            justify-content: center;
+            align-items: center;
+            min-height: 74px;
+
+            svg {
+                width: 18px;
+                height: 18px;
+
+                path {
+                    fill: var(--color-white);
+                }
+            }
+        }
+    }
 }
