@@ -1,5 +1,8 @@
+# Preview WebApp:
+Link on Vercel: <https://next-gen-ai-summit.vercel.app/>
+
 ## General 
-- Figma: https://www.figma.com/design/YIDoKQQcLI3MzPWAkfkDTA/Nexus--AI-Event-Landing-Page--Community---Copy-?m=auto&t=2fzNW5qkVTjIyqVC-6
+- Figma: <https://www.figma.com/design/YIDoKQQcLI3MzPWAkfkDTA/Nexus--AI-Event-Landing-Page--Community---Copy-?m=auto&t=2fzNW5qkVTjIyqVC-6>
 - About me: Ilia Vahonin SI-16
 
 ## Libs:
