@@ -27,7 +27,7 @@
             font-size: 22px;
             line-height: 136%;
             color: var(--color-white);
-            font-family: var(--font-syne700);
+            font-family: var(--font-syne);
 
             @media (max-width: 1240px) {
                 font-size: 18px;
@@ -44,7 +44,7 @@
             line-height: 136%;
             text-align: right;
             color: var(--color-white);
-            font-family: var(--font-syne700);
+            font-family: var(--font-syne);
 
             @media (max-width: 1240px) {
                 font-size: 18px;
@@ -60,8 +60,9 @@
     &__title {
         font-weight: 700;
         font-size: 100px;
+        line-height: normal;
         color: var(--color-white);
-        font-family: var(--font-syne700);
+        font-family: var(--font-syne);
         margin-top: 80px;
         z-index: 1;
         position: relative;
@@ -110,7 +111,7 @@
         span {
             font-size: 25px;
             font-weight: 500;
-            font-family: var(--font-syne500);
+            font-family: var(--font-syne);
         }
 
         @media (max-width: 768px) {

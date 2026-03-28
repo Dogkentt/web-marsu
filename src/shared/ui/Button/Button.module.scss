@@ -5,9 +5,15 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    font-family: var(--font-syne400);
+    font-family: var(--font-syne);
     transition: 350ms;
     font-size: 25px;
+    line-height: normal;
+
+    &--link {
+        text-decoration: none;
+        width: max-content;
+    }
 
     &:active {
         transform: scale(0.95);
@@ -16,7 +22,7 @@
     &--text {
         font-weight: 400;
         color: var(--color-white);
-        font-family: var(--font-syne400);
+        font-family: var(--font-syne);
     }
 
     &--outlined {
@@ -24,7 +30,7 @@
 
         font-weight: 400;
         color: var(--color-white);
-        font-family: var(--font-syne400);
+        font-family: var(--font-syne);
     }
 
     &--primary {

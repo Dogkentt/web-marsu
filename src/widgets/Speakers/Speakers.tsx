@@ -27,12 +27,12 @@ const Speakers = () => {
                 ))}
             </div>
 
-            <Link href="#" className={styles["speakers__link"]}>
-                <Button appearance="outlined">
+            {/* <Link> */}
+                <Button appearance="outlined" href="#" className={styles["speakers__link"]}>
                     And more
                     <IconArrow />
                 </Button>
-            </Link>
+            {/* </Link> */}
         </section>
     );
 };

@@ -21,7 +21,12 @@ export const Header = () => {
                 nexus
             </Link>
 
-            <button className={cn(styles["header__burger"], { [styles["header__burger--active"]]: isOpenMenu })} onClick={() => setIsOpenMenu(prev => !prev)}>
+            <button 
+                className={cn(styles["header__burger"], { 
+                    [styles["header__burger--active"]]: isOpenMenu 
+                })} 
+                onClick={() => setIsOpenMenu(prev => !prev)}
+            >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -31,14 +36,15 @@ export const Header = () => {
                 <ul className={cn(styles["header__nav"])}>
                     { asideDataItems?.map((item, i) => (
                         <li key={i} className={styles["header__nav-item"]}>
-                            <Link href={`/#${item.link}`}>
+                            {/* <Link href={`/#${item.link}`}> */}
                                 <Button
                                     appearance={activeId === item.link ? 'outlined' : 'text'}
                                     className={styles["header__nav-button"]}
+                                    href={`/#${item.link}`}
                                 >
                                     { item.title }
                                 </Button>
-                            </Link>
+                            {/* </Link> */}
                         </li>
                     ))}
                 </ul>

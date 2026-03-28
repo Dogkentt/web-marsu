@@ -27,12 +27,12 @@ const AboutUs = () => {
                         <Image src="/images/reviews/human-four.png" alt="Speaker Four" width={74} height={74} />
                     </div>
 
-                    <Link href={`#`} className={styles["about-us__block-speakers-link"]}>
-                        <Button appearance="outlined">
+                    {/* <Link href={`#`}> */}
+                        <Button href={`#`} appearance="outlined" className={styles["about-us__block-speakers-link"]}>
                             And more
                             <IconArrow />
                         </Button>
-                    </Link>
+                    {/* </Link> */}
                 </div>
             </BlockUi>
 
