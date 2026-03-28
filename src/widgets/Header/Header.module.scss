@@ -26,9 +26,10 @@
     &__logotype {
         font-size: 50px;
         font-weight: 700;
-        font-family: var(--font-syne-bold);
+        font-family: var(--font-syne);
         color: var(--color-white);
         text-decoration: none;
+        line-height: normal;
 
         @media (max-width: 1240px) {
             font-size: 40px;
