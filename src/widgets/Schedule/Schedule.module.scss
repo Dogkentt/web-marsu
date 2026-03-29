@@ -67,21 +67,19 @@
         display: flex;
         margin-left: auto;
         margin-top: 80px;
-        width: max-content;
 
-        button {
-            min-width: 600px;
-            justify-content: center;
-            align-items: center;
-            min-height: 74px;
+        box-sizing: border-box;
+        min-width: 600px;
+        height: 74px;
+        justify-content: center;
+        align-items: center;
 
-            svg {
-                width: 18px;
-                height: 18px;
+        svg {
+            width: 18px;
+            height: 18px;
 
-                path {
-                    fill: var(--color-white);
-                }
+            path {
+                fill: var(--color-white);
             }
         }
     }

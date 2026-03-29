@@ -2,6 +2,10 @@
     display: flex;
     gap: 20px;
 
+    &--left {
+        flex-direction: row-reverse;
+    }
+
     &__info {
         background-color: var(--color-gray);
         border-radius: 50px;

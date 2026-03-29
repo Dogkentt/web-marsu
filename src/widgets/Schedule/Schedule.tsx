@@ -18,7 +18,7 @@ const Schedule = () => {
                 <BlockUi className={styles["schedule__list"]} appearance="dark">
                     { scheduleItemsData.map((item, i) => (
                         <div className={styles["schedule__item"]} key={i}>
-                            <h4 className={styles["schedule__item-time"]}>Day { item.day } <br /> { item.time }</h4>
+                            <h3 className={styles["schedule__item-time"]}>Day { item.day } <br /> { item.time }</h3>
 
                             <div className={styles["schedule__item-info"]}>
                                 <h3 className={styles["schedule__item-title"]}>{ item.title }</h3>
@@ -27,12 +27,10 @@ const Schedule = () => {
                         </div>
                     )) }
 
-                    <Link href="#" className={styles["schedule__link"]}>
-                        <Button appearance="primary">
-                            View detailed schedule
-                            <IconArrow />
-                        </Button>
-                    </Link>
+                    <Button appearance="primary" href="#" className={styles["schedule__link"]}>
+                        View detailed schedule
+                        <IconArrow />
+                    </Button>
                 </BlockUi>
             </article>
         </section>

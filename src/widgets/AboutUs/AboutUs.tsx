@@ -10,7 +10,7 @@ const AboutUs = () => {
     return (
         <section className={styles["about-us"]}>
             <BlockUi className={cn(styles["about-us__block"], styles["about-us__block--first"])} appearance="primary">
-                <h3 className={styles["about-us__block-title"]}>Speakers</h3>
+                <h2 className={styles["about-us__block-title"]}>Speakers</h2>
                 <div className={styles["about-us__block-info"]}>
                     <Link href={`#`} className={styles["about-us__block-info-link"]}>
                         <IconArrow />
@@ -27,23 +27,21 @@ const AboutUs = () => {
                         <Image src="/images/reviews/human-four.png" alt="Speaker Four" width={74} height={74} />
                     </div>
 
-                    {/* <Link href={`#`}> */}
-                        <Button href={`#`} appearance="outlined" className={styles["about-us__block-speakers-link"]}>
-                            And more
-                            <IconArrow />
-                        </Button>
-                    {/* </Link> */}
+                    <Button href={`#`} appearance="outlined" className={styles["about-us__block-speakers-link"]}>
+                        And more
+                        <IconArrow />
+                    </Button>
                 </div>
             </BlockUi>
 
             <div className={styles["about-us__blocks"]}>
                 <BlockUi className={styles["about-us__block"]} appearance="primary">
-                    <h3 className={styles["about-us__block-title"]}>Technologies</h3>
+                    <h2 className={styles["about-us__block-title"]}>Technologies</h2>
                     <p className={styles["about-us__block-description"]}>Explore advanced machine learning, natural language processing, AI-driven automation, and emerging cybersecurity applications.</p>
                 </BlockUi>
 
                 <BlockUi className={cn(styles["about-us__block"], styles["about-us__block--light"])} appearance="light">
-                    <h3 className={styles["about-us__block-title"]}>Networking Opportunities</h3>
+                    <h2 className={styles["about-us__block-title"]}>Networking Opportunities</h2>
                     <p className={styles["about-us__block-description"]}>Enjoy exclusive networking sessions, roundtables, and social events to foster collaboration and spark new partnerships.</p>
                 </BlockUi>
             </div>

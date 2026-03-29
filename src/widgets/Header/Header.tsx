@@ -36,15 +36,13 @@ export const Header = () => {
                 <ul className={cn(styles["header__nav"])}>
                     { asideDataItems?.map((item, i) => (
                         <li key={i} className={styles["header__nav-item"]}>
-                            {/* <Link href={`/#${item.link}`}> */}
-                                <Button
-                                    appearance={activeId === item.link ? 'outlined' : 'text'}
-                                    className={styles["header__nav-button"]}
-                                    href={`/#${item.link}`}
-                                >
-                                    { item.title }
-                                </Button>
-                            {/* </Link> */}
+                            <Button
+                                appearance={activeId === item.link ? 'outlined' : 'text'}
+                                className={styles["header__nav-button"]}
+                                href={`/#${item.link}`}
+                            >
+                                { item.title }
+                            </Button>
                         </li>
                     ))}
                 </ul>

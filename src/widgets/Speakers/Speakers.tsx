@@ -23,16 +23,15 @@ const Speakers = () => {
                         name={speaker.name}
                         job={speaker.job}
                         key={index}
+                        appearance={index >= 2 ? "left" : "right"}
                     />
                 ))}
             </div>
 
-            {/* <Link> */}
-                <Button appearance="outlined" href="#" className={styles["speakers__link"]}>
-                    And more
-                    <IconArrow />
-                </Button>
-            {/* </Link> */}
+            <Button appearance="outlined" href="#" className={styles["speakers__link"]}>
+                And more
+                <IconArrow />
+            </Button>
         </section>
     );
 };
