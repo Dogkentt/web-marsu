@@ -20,15 +20,6 @@ const Hero = ({ className }: HeroProps) => {
                 <h1 className={styles["hero__title"]}>NEXT-GEN AI SUMMIT</h1>
                 <p className={styles["hero__description"]}>Explore the cutting-edge innovations shaping the future of artificial intelligence. Join global leaders and visionaries for two days of insights, discussions, and breakthroughs.</p>
                 
-                {/* <Link href="#tickets" className={styles["hero__link"]}>
-                    <Button
-                        appearance="primary"
-                        className={styles["hero__button"]}
-                    >
-                        <span>Early bird tickets</span>
-                        <img src="icons/arrow.svg" alt="Arrow Right" />
-                    </Button>
-                </Link> */}
                 <Button
                     appearance="primary"
                     className={styles["hero__button"]}
