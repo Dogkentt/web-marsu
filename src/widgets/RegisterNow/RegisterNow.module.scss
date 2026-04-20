@@ -1,0 +1,140 @@
+.register-now {
+    &__card {
+        margin-top: 60px;
+        background-color: var(--color-dark);
+        padding: 90px 100px;
+        border-radius: 50px;
+        position: relative;
+
+        @media (max-width: 1240px) {
+            padding: 70px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 40px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 550px) {
+            padding: 30px;
+            border-radius: 35px;
+        }
+
+        &::before {
+            content: '';
+            background-image: url("../../../public/images/register-now/star.svg");
+            background-repeat: no-repeat;
+            width: 365px;
+            height: 300px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-radius: 50px;
+
+            @media (max-width: 1240px) {
+                background-size: 100% 100%;
+                width: 230px;
+                height: 230px;
+            }
+
+            @media (max-width: 768px) {
+                width: 150px;
+                height: 150px;
+                border-radius: 0 0 50px 0;
+            }
+
+            @media (max-width: 550px) {
+                width: 80px;
+                height: 80px;
+                border-radius: 0 0 35px 0;
+            }
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            margin-bottom: -25px;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+                margin-bottom: -10px;
+            }
+
+            @media (max-width: 550px) {
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        }
+
+        &-timer {
+            font-weight: 400;
+            font-size: 200px;
+            position: relative;
+
+            @media (max-width: 992px) {
+                font-size: 150px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 120px;
+            }
+
+            @media (max-width: 550px) {
+                font-size: 80px;
+                text-align: center;
+            }
+
+            @media (max-width: 350px) {
+                font-size: 60px;
+            }
+        }
+
+        &-timeline {
+            display: flex;
+            position: relative;
+
+            @media (max-width: 992px) {
+                justify-content: space-around;
+                max-width: 530px;
+            }
+
+            @media (max-width: 768px) {
+                max-width: 430px;
+            }
+
+            @media (max-width: 550px) {
+                max-width: 280px;
+                margin: 0 auto;
+                padding-left: 11px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 188%;
+                text-align: center;
+
+                @media (max-width: 992px) {
+                    width: max-content !important;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+
+                &:first-of-type {
+                    width: 190px;
+                }
+
+                &:nth-of-type(2) {
+                    width: 290px;
+                }
+
+                &:last-of-type {
+                    width: 240px;
+                }
+            }
+        }
+    }
+}

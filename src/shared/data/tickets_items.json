@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "EARLY BIRD PASS",
+        "text": "Limited time offer!",
+        "price": 299,
+        "appearance": "primary"
+    },
+    {
+        "id": 2,
+        "title": "STANDARD PASS",
+        "text": null,
+        "price": 399,
+        "appearance": "secondary"
+    },
+    {
+        "id": 3,
+        "title": "VIP EXPERIENCE",
+        "text": "Includes exclusive speaker meetups & front-row seating",
+        "price": 699,
+        "appearance": "secondary"
+    }
+]

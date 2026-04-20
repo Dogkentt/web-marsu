@@ -4,4 +4,17 @@
     color: var(--color-white);
     max-width: 860px;
     line-height: normal;
+
+    @media (max-width: 992px) {
+        font-size: 60px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 32px;
+        text-align: center;
+    }
 }

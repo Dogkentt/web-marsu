@@ -5,19 +5,23 @@ import TextSection from "@/shared/ui/Text/Text";
 
 interface HeaderSectionProps {
     title: React.ReactNode;
-    text: React.ReactNode;
+    text?: React.ReactNode;
     className?: string;
+    children?: React.ReactNode;
 }
 
-export const HeaderSection = ({ title, text, className }: HeaderSectionProps) => {
+export const HeaderSection = ({ title, text, className, children }: HeaderSectionProps) => {
     return (
-        <div className={cn(styles["header-section"], className)}>
+        <div className={cn(styles["header-section"], "margin-top", className)}>
             <TitleSection className={styles["header-section__title"]}>
                 { title }
             </TitleSection>
-            <TextSection className={styles["header-section__text"]}>
-                { text }
-            </TextSection>
+            { text && 
+                <TextSection className={styles["header-section__text"]}>
+                    { text }
+                </TextSection>
+            }
+            { children && children }
         </div>
     );
 }

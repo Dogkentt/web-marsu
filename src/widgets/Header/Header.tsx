@@ -9,7 +9,6 @@ import { useScrollSpy } from "@/shared/libs/useScroolSpy"
 import { useState } from "react"
 
 const sectionIds = asideDataItems.map(item => item.link);
-console.log(sectionIds);
 
 export const Header = () => {
     const activeId = useScrollSpy({ ids: sectionIds });

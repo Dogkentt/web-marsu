@@ -4,5 +4,8 @@ import AboutUs from "@/widgets/AboutUs/AboutUs";
 import Companies from "@/widgets/Companies/Companies";
 import Speakers from "@/widgets/Speakers/Speakers";
 import WhyAttend from "@/widgets/WhyAttend/WhyAttend";
+import AttendeesSay from "@/widgets/AttendeesSay/AttendeesSay";
+import RegisterNow from "@/widgets/RegisterNow/RegisterNow";
+import Tickets from "@/widgets/Tickets/Tickets";
 
-export { Hero, Schedule, AboutUs, Companies, Speakers, WhyAttend };
+export { Hero, Schedule, AboutUs, Companies, Speakers, WhyAttend, AttendeesSay, RegisterNow, Tickets };

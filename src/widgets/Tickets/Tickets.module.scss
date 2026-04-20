@@ -1,0 +1,12 @@
+.tickets {
+    &__cards {
+        display: flex;
+        gap: 20px;
+        // flex-wrap: wrap;
+        margin-top: 60px;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+    }
+}

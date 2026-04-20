@@ -8,10 +8,11 @@ interface ButtonProps {
     className?: string;
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
     href?: string;
+    type?: "button" | "submit" | "reset";
 }
 type ButtonAppearance = "text" | "outlined" | "primary" | "secondary";
 
-const Button = ({ children, appearance = "text", className, onClick, href, ...props }: ButtonProps) => {
+const Button = ({ children, appearance = "text", className, onClick, href, type = "button", ...props }: ButtonProps) => {
     if (href) {
         return (
             <Link href={href} className={cn(styles["button"], styles["button--link"], className, {
@@ -34,6 +35,7 @@ const Button = ({ children, appearance = "text", className, onClick, href, ...pr
                 [styles["button--secondary"]]: appearance == "secondary",
             })}
             onClick={onClick}
+            type={type}
             {...props}
         >
             { children }
