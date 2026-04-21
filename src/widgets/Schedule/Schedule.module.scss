@@ -1,38 +1,63 @@
-// .schedule-wrap {
-//     min-height: 1000px;
-// }
-
 .schedule {
     margin-top: 90px;
     overflow: hidden;
     position: relative;
+
+    @media (max-width: 1240px) {
+        margin-top: 50px;
+    }
 
     &::before {
         content: '';
         background-image: url("../../../public/images/schedule/circle.svg");
         background-repeat: no-repeat;
         width: 386px;
-        height: 266px;
+        height: 226px;
         position: absolute;
         left: 0;
         bottom: 0;
         border-radius: 50px;
+
+        @media (max-width: 992px) {
+            width: 260px;
+            background-size: 100% 100%;
+        }
+
+        @media (max-width: 768px) {
+            width: 200px;
+            height: 140px;
+            left: -50px;
+        }
     }
 
     &__list {
         padding: 140px 80px;
-        // display: flex;
-        // flex-direction: column;
-        // gap: 150px;
+
+        @media (max-width: 1240px) {
+            padding: 90px 60px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 45px 30px;
+        }
     }
 
     &__item {
         display: flex;
         justify-content: space-between;
         gap: 20px;
+        position: relative;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
 
         &:not(:first-of-type) {
             margin-top: 150px;
+
+            @media (max-width: 768px) {
+                margin-top: 50px;
+            }
         }
 
         &-time {
@@ -41,6 +66,14 @@
             line-height: 120%;
             color: var(--color-white);
             min-width: max-content;
+
+            @media (max-width: 1240px) {
+                font-size: 32px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 24px;
+            }
         }
 
         &-info {
@@ -52,6 +85,14 @@
             font-size: 40px;
             line-height: normal;
             color: var(--color-white);
+
+            @media (max-width: 1240px) {
+                font-size: 32px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 22px;
+            }
         }
 
         &-text {
@@ -60,6 +101,11 @@
             line-height: 150%;
             color: var(--color-white);
             margin-top: 30px;
+
+            @media (max-width: 1240px) {
+                margin-top: 10px;
+                font-size: 18px;
+            }
         }
     }
 
@@ -73,6 +119,7 @@
         height: 74px;
         justify-content: center;
         align-items: center;
+        position: relative;
 
         svg {
             width: 18px;
@@ -81,6 +128,19 @@
             path {
                 fill: var(--color-white);
             }
+        }
+
+        @media (max-width: 1240px) {
+            margin-top: 60px;
+        }
+
+        @media (max-width: 992px) {
+            width: 100%;
+            min-width: auto;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 30px;
         }
     }
 }

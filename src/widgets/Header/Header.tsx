@@ -9,14 +9,15 @@ import { useScrollSpy } from "@/shared/libs/useScroolSpy"
 import { useState } from "react"
 
 const sectionIds = asideDataItems.map(item => item.link);
-console.log(sectionIds);
 
 export const Header = () => {
     const activeId = useScrollSpy({ ids: sectionIds });
     const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
 
     return (
-        <header className={cn('container', styles["header"])}>
+        <header className={cn('container', styles["header"], {
+            [styles["header--active"]]: isOpenMenu
+        })}>
             <Link href="/#" className={styles["header__logotype"]}>
                 nexus
             </Link>

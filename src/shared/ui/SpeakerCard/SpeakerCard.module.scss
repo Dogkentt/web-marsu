@@ -2,8 +2,16 @@
     display: flex;
     gap: 20px;
 
+    @media (max-width: 1240px) {
+        flex-direction: column-reverse;
+    }
+
     &--left {
         flex-direction: row-reverse;
+
+        @media (max-width: 1240px) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__info {
@@ -14,6 +22,14 @@
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+
+        @media (max-width: 1240px) {
+            width: auto;
+        }
+
+        @media (max-width: 768px) {
+            padding: 30px;
+        }
 
         &-name {
             font-weight: 600;
@@ -28,10 +44,22 @@
             line-height: 150%;
             color: var(--color-dark);
             max-width: 170px;
+
+            @media (max-width: 1240px) {
+                max-width: 100%;
+            }
         }
     }
 
     &__image {
+        @media (max-width: 1240px) {
+            width: 100%;
+            display: flex;
+            object-fit: cover;
+            object-position: center top;
+            height: 350px;
+        }
+
         border-radius: 52px;
     }
 }

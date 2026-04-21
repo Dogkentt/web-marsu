@@ -11,6 +11,7 @@
     top: 0;
     z-index: 2;
     backdrop-filter: blur(10px);
+    transition: 350ms;
 
     @media (max-width: 1240px) {
         padding-top: 30px;
@@ -21,6 +22,11 @@
         flex-wrap: wrap;
         padding-top: 20px;
         padding-bottom: 20px;
+        // height: 78.5px;
+
+        // &--active {
+        //     height: 100%;
+        // }
     }
 
     &__logotype {
@@ -48,9 +54,16 @@
         display: flex;
         gap: 10px;
 
+        &-wrapper{
+            @media (max-width: 992px) {
+                flex-basis: 100%;
+            }
+        }
+
+
         @media (max-width: 992px) {
-            flex-basis: 100%;
             flex-wrap: wrap;
+            // width: 100%;
 
             &-wrapper:not(.header__nav-wrapper--active) {
                 display: none;

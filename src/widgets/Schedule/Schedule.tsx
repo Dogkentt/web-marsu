@@ -11,7 +11,7 @@ const Schedule = () => {
         <section id="schedule" className={styles["schedule-wrap"]}>
             <HeaderSection 
                 title="AGENDA"
-                text="October 15-17, 2052 | Horizon Convention Center, Amsterdam"
+                text="October 15-17, 2052 | Horizon Convention Center, Amsterdam"
             />
 
             <article className={styles["schedule"]}>

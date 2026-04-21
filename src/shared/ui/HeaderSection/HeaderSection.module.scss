@@ -1,9 +1,21 @@
 .header-section {
-    margin-top: 150px;
     display: flex;
     justify-content: space-between;
 
     &__text {
         max-width: 295px;
+
+        @media (max-width: 768px) {
+            max-width: max-content;
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @media (max-width: 500px) {
+        gap: 10px;
     }
 }

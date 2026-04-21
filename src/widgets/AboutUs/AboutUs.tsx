@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const AboutUs = () => {
     return (
-        <section className={styles["about-us"]}>
+        <section className={cn(styles["about-us"], "margin-top")}>
             <BlockUi className={cn(styles["about-us__block"], styles["about-us__block--first"])} appearance="primary">
                 <h2 className={styles["about-us__block-title"]}>Speakers</h2>
                 <div className={styles["about-us__block-info"]}>

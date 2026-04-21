@@ -1,4 +1,4 @@
-import { AboutUs, Companies, Hero, Schedule, Speakers, WhyAttend } from "@/widgets";
+import { AboutUs, AttendeesSay, Companies, Hero, RegisterNow, Schedule, Speakers, Tickets, WhyAttend, ConnectWithUs } from "@/widgets";
 import style from "./page.module.scss";
 import cn from "classnames";
 
@@ -7,13 +7,17 @@ export default function Home() {
     <main className={cn("container", style["main"])}>
       <Hero />
       <Companies />
-
-      {/* have not adaptive */}
-
       <AboutUs />
       <Schedule />
       <Speakers />
       <WhyAttend />
+      <AttendeesSay />
+      <RegisterNow />
+      <Tickets />
+
+      {/* have not adaptive */}
+      <ConnectWithUs />
+      {/* FROM: We’re here to connect and assist you */}
     </main>
   );
 }
