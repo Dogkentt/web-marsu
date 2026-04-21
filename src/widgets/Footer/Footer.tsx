@@ -72,6 +72,7 @@ export const Footer = () => {
                             type="submit" 
                             className={styles["footer__form-button"]}
                             appearance="secondary"
+                            disabled={isSuccess}
                         >
                             { isSuccess ? "Subscribed!" : "Stay updated" }
                         </Button>
@@ -79,7 +80,6 @@ export const Footer = () => {
 
                     <h4 className={styles["footer__subscribe-title"]}>Follow us</h4>
                     <ul className={styles["footer__subscribe-list"]}>
-                        {/* <li><a href="#"><img src="/icons/facebook-logo.svg" alt="Facebook" /></a></li> */}
                         <li className={styles["footer__subscribe-item"]}><a href="#"><IconFacebook /></a></li>
                         <li className={styles["footer__subscribe-item"]}><a href="#"><IconLinkedIn /></a></li>
                         <li className={styles["footer__subscribe-item"]}><a href="#"><IconInstagram /></a></li>

@@ -1,4 +1,4 @@
-.input {
+.textarea {
     background: transparent;
     border: 0;
     border-bottom: 2px solid var(--color-white);
@@ -9,13 +9,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-
-    &:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0 1000px var(--color-white) inset;
-        -webkit-text-fill-color: var(--color-dark);
-        border: 0;
-        border-radius: 4px;
-    }
+    resize: none;
 
     &--error {
         border-color: var(--color-danger) !important;

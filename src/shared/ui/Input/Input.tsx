@@ -18,6 +18,8 @@ export const Input = ({ type = "text", placeholder, appearance = "primary", erro
                 placeholder={placeholder}
                 className={cn(styles["input"], {
                     [styles["input--error"]]: error,
+                    [styles["input--primary"]]: appearance === "primary",
+                    [styles["input--secondary"]]: appearance === "secondary",
                 })}
             />
 
