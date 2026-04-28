@@ -23,7 +23,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            transition: 350ms;
+            transition: background-color 350ms, color 350ms;
             
             &:first-of-type {
                 svg { transform: rotate(-135deg); } 
@@ -32,7 +32,7 @@
             svg { transform: rotate(45deg); }
             svg path {
                 fill: var(--color-white);
-                transition: 350ms;
+                transition: fill 350ms, transform 350ms;
             }
 
             &:hover {

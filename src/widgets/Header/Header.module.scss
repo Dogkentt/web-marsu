@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    // gap: 2px;
     padding-top: 40px;
     padding-bottom: 40px;
     position: fixed;
@@ -11,7 +11,7 @@
     top: 0;
     z-index: 2;
     backdrop-filter: blur(10px);
-    transition: 350ms;
+    transition: backdrop-filter 350ms, padding 350ms;
 
     @media (max-width: 1240px) {
         padding-top: 30px;
@@ -90,7 +90,7 @@
             height: 3px;
             border-radius: 6px;
             background-color: var(--color-white);
-            transition: 350ms;
+            transition: transform 350ms, opacity 350ms;
         }
 
         &--active {

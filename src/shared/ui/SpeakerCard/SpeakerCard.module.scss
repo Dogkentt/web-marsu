@@ -22,6 +22,7 @@
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        flex-grow: 1;
 
         @media (max-width: 1240px) {
             width: auto;
@@ -52,6 +53,9 @@
     }
 
     &__image {
+        border-radius: 50px;
+        filter: grayscale(100%);
+
         @media (max-width: 1240px) {
             width: 100%;
             display: flex;
@@ -59,7 +63,5 @@
             object-position: center top;
             height: 350px;
         }
-
-        border-radius: 52px;
     }
 }

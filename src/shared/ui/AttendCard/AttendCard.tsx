@@ -5,11 +5,10 @@ import cn from "classnames";
 interface AttendCardProps {
     title: string;
     description: string;
-    number: string;
     appearance?: "left" | "right";
 }
 
-const AttendCard = ({ title, description, number, appearance }: AttendCardProps) => {
+const AttendCard = ({ title, description, appearance }: AttendCardProps) => {
   return (
     <BlockUi className={cn(styles["attend-card"], {
       [styles["attend-card--left"]]: appearance === "left",
@@ -19,7 +18,6 @@ const AttendCard = ({ title, description, number, appearance }: AttendCardProps)
       <p className={styles["attend-card__description"]}>
         {description}
       </p>
-      <span className={styles["attend-card__number"]}>{ number }</span>
     </BlockUi>
   );
 };

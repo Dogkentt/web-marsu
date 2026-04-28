@@ -89,7 +89,7 @@
                 border-radius: 100%;
                 border: 2px solid transparent;
                 transition: 350ms;
-                svg path { transition: 350ms; }
+                svg path { transition: fill 350ms; }
 
                 &:hover {
                     background-color: transparent;
@@ -179,7 +179,7 @@
 
                     path {
                         fill: var(--color-white);
-                        transition: 350ms;
+                        transition: fill 350ms;
                     }
                 }
 

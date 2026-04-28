@@ -92,7 +92,7 @@
 
             svg path {
                 fill: var(--color-dark);
-                transition: 350ms;
+                transition: fill 350ms;
             }
         }
     }
