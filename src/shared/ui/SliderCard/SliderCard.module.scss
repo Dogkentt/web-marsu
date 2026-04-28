@@ -2,7 +2,11 @@
     padding: 70px 60px;
     border-radius: 50px;
     background-color: var(--color-dark);
-    transition: 350ms;
+    transition: background-color 350ms, color 350ms;
+
+     @media (max-width: 1240px) {
+        padding: 50px 40px;
+    }
 
     @media (max-width: 992px) {
         padding: 40px;

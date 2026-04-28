@@ -19,7 +19,6 @@ const WhyAttend = () => {
                         key={index}
                         title={item.title}
                         description={item.text}
-                        number={item.number}
                         appearance={index >= 2 ? "left" : "right"}
                     />
                 )) }

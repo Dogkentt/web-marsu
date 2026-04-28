@@ -14,10 +14,7 @@ export default function Home() {
       <AttendeesSay />
       <RegisterNow />
       <Tickets />
-
-      {/* have not adaptive */}
       <ConnectWithUs />
-      {/* FROM: We’re here to connect and assist you */}
     </main>
   );
 }

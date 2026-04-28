@@ -6,7 +6,7 @@
     align-items: center;
     gap: 20px;
     font-family: var(--font-syne);
-    transition: 350ms;
+    transition: background 350ms, transform 350ms, color 350ms, opacity 350ms;
     font-size: 25px;
     line-height: normal;
 

@@ -73,7 +73,7 @@
             font-size: 20px;
             line-height: 150%;
             color: var(--color-dark);
-            transition: 350ms;
+            transition: color 350ms;
 
             &:hover {
                 color: var(--color-primary);
@@ -162,7 +162,7 @@
         }
 
         &-item a {
-            svg path { transition: 350ms; }
+            svg path { transition: fill 350ms; }
 
             &:hover svg path {
                 fill: var(--color-dark);

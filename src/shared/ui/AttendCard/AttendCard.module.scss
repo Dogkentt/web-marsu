@@ -1,4 +1,5 @@
 .attend-card {
+    counter-increment: attend-counter;
     padding: 40px 60px;
     position: relative;
     max-height: 290px;
@@ -18,9 +19,9 @@
         }
     }
 
-    &--left & {
-        &__number {
-            left: auto;
+    &--left {
+        &::after {
+            left: auto !important;
             right: 15px;
         }
     }
@@ -47,7 +48,8 @@
         }
     }
 
-    &__number {
+    &::after {
+        content: counter(attend-counter, decimal-leading-zero);
         font-weight: 400;
         font-size: 300px;
         background: linear-gradient(183deg, var(--color-primary) 0%, rgba(1, 71, 255, 0) 100%);
@@ -62,6 +64,12 @@
         @media (max-width: 1240px) {
             font-size: 220px;
             left: 0;
+        }
+
+        @media (max-width: 768px) {
+            left: auto;
+            right: 0;
+            font-size: 200px;
         }
     }
 }

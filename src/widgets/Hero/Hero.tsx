@@ -2,7 +2,6 @@ import Button from "@/shared/ui/Button/Button";
 import styles from "./Hero.module.scss";
 import cn from "classnames";
 import BlockUi from "@/shared/ui/BlockUi/BlockUi";
-import Link from "next/link";
 import { IconArrow } from "@/shared/ui/Icons/Icons";
 
 interface HeroProps {
@@ -27,7 +26,6 @@ const Hero = ({ className }: HeroProps) => {
                     href="#tickets"
                 >
                     <span>Early bird tickets</span>
-                    {/* <img src="icons/arrow.svg" alt="Arrow Right" /> */}
                     <IconArrow />
                 </Button>
             </BlockUi>
